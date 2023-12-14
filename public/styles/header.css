@@ -1,0 +1,59 @@
+/* header {
+  height: 520px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 204, 0, 0.844), rgba(255, 204, 0, 0.844)), url('../images/asfalt-dark.png') center/cover;
+}
+
+header div {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+header div img {
+  max-height: 100%;
+  width: auto;
+}
+
+header div h2 {
+  font-family: 'Bungee', cursive;
+  font-size: 3em;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+.first-header {
+  height: 520px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 204, 0, 0.844), rgba(255, 204, 0, 0.844)), url('../images/asfalt-dark.png') center/cover;
+}
+
+.first-header div {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.first-header div img {
+  max-height: 100%;
+  width: auto;
+}
+
+.first-header div h2 {
+  font-family: 'Bungee', cursive;
+  font-size: 3em;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+}

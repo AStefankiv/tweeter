@@ -1,0 +1,63 @@
+main .tweets-container {
+  width: 100%;
+  display: inline;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #000000;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+.tweets-container header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.tweets-container-header div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.tweets-container header div:first-child img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-color: transparent;
+}
+
+main footer {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  margin-left: 2%;
+}
+
+.div-tweet {
+  padding-left: 1em;
+}
+
+.tweets-container > article > .line {
+  width: 97%;
+  height: 4px;
+  background-color: #000000;
+  margin-left: 1.5%;
+}
+
+.transparent-tone {
+  color: #9d9d9d;
+}
+
+.three-buttons button {
+  border: none;
+}
+
+.three-buttons button:hover {
+  color: orange;
+}

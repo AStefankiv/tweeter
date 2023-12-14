@@ -1,0 +1,35 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+nav span {
+  font-family: 'Bungee', cursive;
+}
+
+/* <i class="fa-solid fa-angles-down"></i> */
+.nav-right {
+  margin-left: auto;
+  font-family: sans-serif;
+  padding: 1.5em;
+}
+
+button.new.tweet {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+button.new.tweet i {
+  color: red;
+}
+
+button.new.tweet:hover {
+  color: #1DA1F2;
+}

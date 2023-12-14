@@ -4,7 +4,7 @@
 
 const PORT          = 8080;
 const express       = require("express");
-const bodyParser    = require("body-parser");
+const bodyParser    = require("body-parser");// Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
 const app           = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
