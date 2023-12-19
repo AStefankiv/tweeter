@@ -79,9 +79,17 @@ $(document).ready(function() {
     const tweetText = $tweetText.val();
     const tweetTextLength = tweetText.length;
     if (tweetTextLength === 0) {
-      alert('Please enter a tweet');
+      $('.error-message').text('⚠️Your tweet is empty!⚠️');
+      $('.error-message').slideDown();
+      setTimeout(function() {
+        $('.error-message').slideUp();
+      }, 2000);
     } else if (tweetTextLength > 140) {
-      alert('Your tweet is too long');
+      $('.error-message').text('⚠️Your tweet is too long!⚠️');
+      $('.error-message').slideDown();
+      setTimeout(function() {
+        $('.error-message').slideUp();
+      }, 2000);
     } else {
       $.ajax({
         url: '/tweets',

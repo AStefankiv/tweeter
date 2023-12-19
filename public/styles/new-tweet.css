@@ -53,3 +53,17 @@ main .new-tweet {
   display: flex;
   justify-content: space-between;
 }
+
+.error-message {
+  display: flex;
+  width: 100%;
+  color: red;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  border: red solid 4px;
+  padding: 0.3em;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
