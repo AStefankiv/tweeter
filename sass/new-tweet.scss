@@ -32,18 +32,19 @@ main .new-tweet {
 }
 
 .new-tweet form output {
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
   font-size: 1.5em;
   color: #000000;
   margin-top: 0.2em;
 }
+
 
 .new-tweet form button {
   background-color: #4056A1;
   color: #FFFFFF;
   border: none;
   padding: 0.3em;
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
   cursor: pointer;
   margin-top: 0.5em;
 }

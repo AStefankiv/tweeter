@@ -11,10 +11,11 @@ main .tweets-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items:flex-start;
   border: 4px solid #000000;
   margin-bottom: 1em;
 }
+
 
 .tweets-container header {
   width: 100%;

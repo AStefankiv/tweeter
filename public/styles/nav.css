@@ -7,29 +7,23 @@ nav {
   display: flex;
   align-items: center;
 }
-
 nav span {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
-
-/* <i class="fa-solid fa-angles-down"></i> */
-.nav-right {
+nav .nav-right {
   margin-left: auto;
   font-family: sans-serif;
   padding: 1.5em;
 }
-
-button.new.tweet {
+nav .nav-right button.new.tweet {
   background-color: transparent;
   border: none;
   color: #FFFFFF;
   cursor: pointer;
 }
-
-button.new.tweet i {
+nav .nav-right button.new.tweet i {
   color: red;
 }
-
-button.new.tweet:hover {
-  color: #1DA1F2;
+nav .nav-right button.new.tweet:hover {
+  color: lightblue;
 }
