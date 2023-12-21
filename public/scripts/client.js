@@ -8,7 +8,7 @@
 $(document).ready(function() {
   
   
-  const renderTweets = function(tweets) {
+  const renderTweets = function(tweets) {//This function is responsible for adding tweets to the page
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').prepend($tweet);
@@ -16,15 +16,15 @@ $(document).ready(function() {
   };
 
 
-  const loadTweets = () => {
+  const loadTweets = () => {//This function is responsible for fetching tweets from the http://localhost:8080/tweets page
     $.ajax({
       url: '/tweets',
       method: 'GET',
       dataType: 'json',
-      success: function(data) {
+      success: function(data) {//This function is responsible for calling the renderTweets function
         renderTweets(data);
       },
-      error: function(error) {
+      error: function(error) {//This function is responsible for showing an error message if the request fails
         console.log('Error: ', error);
       }
     });
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 
 
-  const createTweetElement = function(tweet) {
+  const createTweetElement = function(tweet) {//This function is responsible for returning a tweet <article> element containing the entire HTML structure of the tweet
     const $tweet = $(`
       <article class="tweet">
         <header class="tweets-container-header">
@@ -68,12 +68,13 @@ $(document).ready(function() {
 
   
   
-  const $form = $('#tweet-form');
+  const $form = $('#tweet-form');//This function is responsible for sending the tweet to the server
   $form.on('submit', function(event) {
     event.preventDefault();
     const $tweetText = $('#tweet-text');
     const tweetText = $tweetText.val();
-    const tweetTextLength = tweetText.length;
+    const trimmedTweetText = tweetText.trim();
+    const tweetTextLength = trimmedTweetText.length;
     if (tweetTextLength === 0) {
       $('.error-message').text('⚠️Your tweet is empty!⚠️');
       $('.error-message').slideDown();
@@ -103,7 +104,7 @@ $(document).ready(function() {
 
   loadTweets();
 
-  const $buttonNewTweet = $('.new.tweet');
+  const $buttonNewTweet = $('.new.tweet');//This function is responsible for showing and hiding the new tweet form
   const $sectionHidden = $('.new-tweet');
   $buttonNewTweet.on('click', function() {
     $sectionHidden.slideToggle();
@@ -112,7 +113,7 @@ $(document).ready(function() {
 
 
 
-  $(window).scroll(function() {
+  $(window).scroll(function() {//This function is responsible for showing and hiding the scroll to top button
     if ($(this).scrollTop() > 100) {
       $('#scrolltop').fadeIn();
     } else {
@@ -120,7 +121,7 @@ $(document).ready(function() {
     }
   });
   
-  const $buttonUp = $('#scrolltop');
+  const $buttonUp = $('#scrolltop');//This function is responsible for scrolling to top when the scroll to top button is clicked
   $buttonUp.on('click', function() {
     $('html, body').animate({scrollTop: 0}, 'slow');
   });

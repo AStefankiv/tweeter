@@ -23,6 +23,7 @@ main .new-tweet {
   font-family: sans-serif;
   padding: 1em;
   background: transparent;
+  word-break: keep-all;
 }
 
 .new-tweet form .line {
