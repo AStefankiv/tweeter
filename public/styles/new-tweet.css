@@ -54,7 +54,7 @@ main .new-tweet {
 }
 
 .error-message {
-  display: flex;
+  display: none;
   width: 100%;
   color: red;
   font-family: sans-serif;
@@ -65,4 +65,18 @@ main .new-tweet {
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
+  text-align: center;
+}
+
+#scrolltop {
+  display: none;
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 0.6% 1%;
+  cursor: pointer;
+  border-radius: 50%;
 }

@@ -61,14 +61,10 @@ $(document).ready(function() {
         </footer>
       </article>
     `);
-
     $tweet.find('.div-tweet p').text(tweet.content.text);
     return $tweet;
   };
 
-
-  console.log('This is a client side JS file');
-  
 
   
   
@@ -106,4 +102,27 @@ $(document).ready(function() {
 
 
   loadTweets();
+
+  const $buttonNewTweet = $('.new.tweet');
+  const $sectionHidden = $('.new-tweet');
+  $buttonNewTweet.on('click', function() {
+    $sectionHidden.slideToggle();
+    $('#tweet-text').focus();
+  });
+
+
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#scrolltop').fadeIn();
+    } else {
+      $('#scrolltop').fadeOut();
+    }
+  });
+  
+  const $buttonUp = $('#scrolltop');
+  $buttonUp.on('click', function() {
+    $('html, body').animate({scrollTop: 0}, 'slow');
+  });
+
 });

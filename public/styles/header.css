@@ -17,6 +17,7 @@
   max-height: 100%;
   width: auto;
   margin-top: 10%;
+  align-items: center;
 }
 .first-header div h2 {
   font-family: "Bungee", cursive;
